@@ -1,0 +1,97 @@
+{
+  "projects": [
+    { "id": "1", "title": "Luxury E-Commerce App", "category": "Web Development", "description": "متجر إلكتروني فاخر مع تجربة مستخدم فريدة وسرعة فائقة.", "image": "https://picsum.photos/seed/p1/800/600" },
+    { "id": "2", "title": "Fitness Tracker Pro", "category": "UI/UX Design", "description": "تطبيق متكامل لمتابعة التمارين الرياضية اليومية والأنظمة الغذائية.", "image": "https://picsum.photos/seed/p2/800/600" },
+    { "id": "3", "title": "Real Estate Portal", "category": "Web Development", "description": "منصة عقارية متطورة للبحث عن العقارات وبيعها وشراؤها.", "image": "https://picsum.photos/seed/p3/800/600" },
+    { "id": "4", "title": "Education Dashboard", "category": "Web App", "description": "لوحة تحكم ذكية للمعلمين والطلاب لإدارة العملية التعليمية.", "image": "https://picsum.photos/seed/p4/800/600" },
+    { "id": "5", "title": "Social Connect App", "category": "Mobile UI", "description": "تطبيق تواصل اجتماعي يركز على الخصوصية والسرعة في التواصل.", "image": "https://picsum.photos/seed/p5/800/600" },
+    { "id": "6", "title": "Fintech Wallet", "category": "UI/UX Design", "description": "محفظة رقمية آمنة لإدارة الأموال والتحويلات البنكية الفورية.", "image": "https://picsum.photos/seed/p6/800/600" },
+    { "id": "7", "title": "Travel Planner", "category": "Web App", "description": "مساعد ذكي لتنظيم الرحلات وحجز الفنادق والطيران.", "image": "https://picsum.photos/seed/p7/800/600" },
+    { "id": "8", "title": "Food Delivery Hub", "category": "Web Development", "description": "نظام متكامل لطلب الطعام وتتبع الطلبات لحظة بلحظة.", "image": "https://picsum.photos/seed/p8/800/600" },
+    { "id": "9", "title": "Portfolio V1", "category": "Web Design", "description": "أول نسخة من موقعي الشخصي لعرض الأعمال الإبداعية.", "image": "https://picsum.photos/seed/p9/800/600" },
+    { "id": "10", "title": "Healthcare System", "category": "Web App", "description": "نظام إدارة مستشفيات لحجز المواعيد وتنظيم سجلات المرضى.", "image": "https://picsum.photos/seed/p10/800/600" },
+    { "id": "11", "title": "AI Image Generator", "category": "Web Development", "description": "أداة تستخدم الذكاء الاصطناعي لتوليد الصور بناءً على الوصف.", "image": "https://picsum.photos/seed/p11/800/600" },
+    { "id": "12", "title": "Cybersecurity Tool", "category": "Web App", "description": "أداة ذكية لمراقبة أمن الشبكات واكتشاف الثغرات الأمنية.", "image": "https://picsum.photos/seed/p12/800/600" },
+    { "id": "13", "title": "Crypto Tracker", "category": "UI/UX Design", "description": "منصة لمتابعة أسعار العملات الرقمية وتطورات السوق.", "image": "https://picsum.photos/seed/p13/800/600" },
+    { "id": "14", "title": "E-Learning Platform", "category": "Web Development", "description": "موقع تعليمي يقدم دورات تفاعلية في مختلف المجالات.", "image": "https://picsum.photos/seed/p14/800/600" },
+    { "id": "15", "title": "Music Streaming App", "category": "Mobile UI", "description": "تطبيق استماع للموسيقى مع قوائم تشغيل ذكية مخصصة.", "image": "https://picsum.photos/seed/p15/800/600" },
+    { "id": "16", "title": "Smart Home Controller", "category": "UI/UX Design", "description": "نظام للتحكم في أجهزة المنزل الذكي من مكان واحد.", "image": "https://picsum.photos/seed/p16/800/600" },
+    { "id": "17", "title": "Weather Forecast", "category": "Web App", "description": "تطبيق دقيق للتنبؤ بحالة الطقس بناءً على الموقع الجغرافي.", "image": "https://picsum.photos/seed/p17/800/600" },
+    { "id": "18", "title": "Job Finder Pro", "category": "Web Development", "description": "منصة توظيف تربط بين الشركات والباحثين عن العمل بسهولة.", "image": "https://picsum.photos/seed/p18/800/600" }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Web Development",
+      "description": "بناء مواقع احترافية باستخدام أحدث التقنيات مثل React و Node.js."
+    },
+    {
+      "id": "2",
+      "title": "UI/UX Design",
+      "description": "تصميم واجهات مستخدم جذابة وسهلة الاستخدام تضمن أفضل تجربة للمستخدم."
+    },
+    {
+      "id": "3",
+      "title": "Digital Marketing",
+      "description": "خطط تسويقية مبتكرة لزيادة وصولك لجمهورك المستهدف وتحقيق أهدافك."
+    },
+    {
+      "id": "4",
+      "title": "Mobile App Development",
+      "description": "تطوير تطبيقات موبايل ذكية تعمل على أنظمة Android و iOS بكفاءة عالية."
+    }
+  ],
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 },
+    { "id": "4", "title": "another title", "views": 400 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    { "id": "1", "title": "product1", "name": "dress" },
+    { "id": "2", "title": "product2", "name": "shirt" },
+    { "id": "3", "title": "product3", "name": "jacket" }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "Tamim Magdy",
+      "email": "test@gmail.com",
+      "password": "1234",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "joinDate": "February 2026",
+      "role": "Premium Client"
+    }
+  ],
+ "staff": [
+    {
+      "id": "1",
+      "name": "JASON STROTHER",
+      "role": "LOS OCHO",
+      "bio": "Me encanta...",
+      "skills": ["Skill 1", "Skill 2"],
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "id": "2",
+      "name": "sam harry",
+      "role": "LOS OCHO",
+      "bio": "Me encanta...",
+      "skills": ["teaching", "trainig"],
+      "image": "https://randomuser.me/api/portraits/men/33.jpg"
+    },{
+      "id": "3",
+      "name": "JASON STROTHER",
+      "role": "dev potter",
+      "bio": "Me encanta...",
+      "skills": ["teachin", "designer"],
+      "image": "https://randomuser.me/api/portraits/men/30.jpg"
+    }
+ ]
+}

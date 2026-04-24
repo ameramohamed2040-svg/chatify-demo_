@@ -1,0 +1,125 @@
+/* تنسيقات عامة للصفحة */
+.home-page {
+  padding-top: 80px; /* مكان للنافبار */
+  overflow: hidden; /* عشان الدوائر متعملش سكرول */
+}
+
+/* قسم الـ Hero كامل */
+.hero {
+  background-color: #f7f9fc; /* خلفية فاتحة هادية */
+  padding: 80px 0;
+  position: relative; /* عشان الدوائر الكبيرة اللي في خلفية الصفحة */
+}
+
+/* الحاوية الرئيسية flex */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+/* تنسيق النصوص */
+.hero-content {
+  flex: 1;
+}
+
+.hero-main-title {
+  font-size: 3.8rem; /* خط كبير جداً */
+  color: #1a1e3b; /* أزرق غامق جداً */
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-weight: 800; /* خط سميك جداً */
+}
+
+.hero-subtitle {
+  color: #666;
+  text-transform: uppercase; /* حروف كابيتال */
+  letter-spacing: 2px; /* مسافات بين الحروف */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  color: #777;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 35px;
+  max-width: 500px;
+}
+
+/* تنسيق الزرار (الأزرق والمدور) */
+.sign-up-btn {
+  padding: 12px 35px;
+  background-color: #2e4a8a; /* الأزرق الغامق بتاع التصميم */
+  color: white;
+  border: none;
+  border-radius: 50px; /* مدور بالكامل */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.sign-up-btn:hover {
+  background-color: #1f3366;
+  transform: translateY(-3px); /* رفعة بسيطة */
+}
+
+/* تنسيق الجزء الأيمن (الصورة والخلفية) */
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  max-width: 600px; /* كبرت حجم الصورة */
+  height: auto;
+  z-index: 2; /* فوق الدائرة الصفراء */
+}
+
+/* الدائرة الصفراء اللي ورا الشاشات */
+.yellow-circle-bg {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-color: #fdd10d; /* الأصفر الفاقع */
+  border-radius: 50%;
+  z-index: 1; /* تحت الصورة */
+  right: -50px; /* زحزحتها شوية لليمين */
+}
+
+/* الدوائر الزرقاء الكبيرة اللي في خلفية الصفحة الأصلية */
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(46, 74, 138, 0.05); /* أزرق خفيف جداً */
+  border-radius: 50%;
+  bottom: -100px;
+  left: -100px;
+}
+
+/* عشان يبقى ريسبونسيف على الموبايل */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column-reverse; /* الصورة تطلع فوق الكلام */
+    text-align: center;
+  }
+  
+  .hero-main-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-description {
+    margin: 0 auto 35px auto;
+  }
+}

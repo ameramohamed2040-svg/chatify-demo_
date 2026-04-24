@@ -1,0 +1,192 @@
+.cart-trigger {
+  position: relative;
+  background: transparent; /* إزالة اللون الخلفي */
+  border: none;            /* إزالة الإطار الأسود المزعج */
+  font-size: 26px;         /* تكبير الأيقونة قليلاً */
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  outline: none;           /* إزالة الإطار الأزرق عند الضغط */
+}
+
+.cart-trigger:hover {
+  transform: scale(1.1);
+}
+
+.cart-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #ff4757;
+  color: white;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 2px solid white; /* يعطي شكل احترافي فوق الأيقونة */
+}
+
+.cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff4757;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(255, 71, 87, 0.4);
+}
+
+/* 2. حاوية السايد بار */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  right: -400px; /* مخفي خارج الشاشة */
+  width: 350px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.sidebar-container.open {
+  right: 0; /* يظهر عند الفتح */
+}
+
+/* 3. الخلفية المعتمة مع التمويه (Blur) */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px); /* تأثير زجاجي احترافي */
+  z-index: 1500;
+}
+
+/* 4. التفاصيل الداخلية */
+.sidebar-header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-sidebar {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #bbb;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.sidebar-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-details h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.item-details p {
+  margin: 0;
+  font-size: 13px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.quantity-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.quantity-bar button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 5. الجزء السفلي */
+.sidebar-footer {
+  padding: 25px;
+  border-top: 1px solid #f1f1f1;
+  background: #fff;
+}
+
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #0056b3;
+}

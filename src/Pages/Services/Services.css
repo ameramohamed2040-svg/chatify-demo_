@@ -1,0 +1,85 @@
+.services-page {
+  padding: 80px 0;
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border-color: #007bff;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 25px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.service-card:hover .service-icon {
+  color: #007bff;
+}
+
+.service-name {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.service-text {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.service-btn {
+  background: transparent;
+  border: none;
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: 0.3s;
+}
+
+.service-card:hover .service-btn {
+  border-bottom-color: #007bff;
+}

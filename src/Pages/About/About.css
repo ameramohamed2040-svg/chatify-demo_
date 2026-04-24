@@ -1,0 +1,111 @@
+.about-page-new {
+  background-color: #f0ede9; /* نفس لون الخلفية في الصورة */
+  min-height: 100vh;
+  padding: 50px 10%;
+  font-family: 'Georgia', serif; /* خط كلاسيكي */
+}
+
+.about-header {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.about-header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.about-header .subtitle {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  color: #666;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.staff-label {
+  background: #1a1a1a;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.staff-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.staff-card {
+  background: #e6e6e6; /* لون الكارت الرمادي */
+  width: 300px;
+  border: 1px solid #d4d4d4;
+}
+
+.image-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  background-color: #a33; /* لون خلفية الصورة الداكن */
+}
+
+.card-info {
+  background: white;
+  margin: 0 10px 10px 10px;
+  padding: 20px;
+  min-height: 350px;
+}
+
+.card-info h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.member-role {
+  font-size: 0.7rem;
+  color: #888;
+  display: block;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.member-bio {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.skills-section h4 {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-section li {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,220 @@
+/* الحاوية الأساسية */
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f7f8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* الكارت الأبيض - بشكل منحني جداً كما في الصورة */
+.login_form {
+  background: white;
+  padding: 50px 30px;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* العنوان الرئيسي */
+.login_form h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+}
+
+/* مجموعات الإدخال */
+.input_group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* تنسيق المجموعة (التي تحتوي العنوان والخانة) */
+.input_group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* تنسيق الكلمة التي فوق الخانة */
+.input_group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* تنسيق الخانة نفسها لتشبه الصورة الثانية */
+.input_group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none; /* حذف الإطار تماماً */
+  border-radius: 10px;
+  background-color: #eff2f7; /* اللون الأزرق الفاتح جداً مثل الصورة */
+  font-size: 16px;
+  color: #333;
+  outline: none; /* يمنع ظهور إطار أسود عند الضغط */
+  box-sizing: border-box;
+}
+
+/* تأثير بسيط عند الوقوف بالماوس على الخانة */
+.input_group input:hover {
+  background-color: #dbe7ff;
+}
+
+/* رابط نسيت كلمة السر */
+.forgot_pass {
+  display: block;
+  text-align: left;
+  color: #4c75f2;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: -15px;
+  margin-bottom: 35px;
+}
+
+/* زر تسجيل الدخول الأصفر البيضاوي */
+.login_btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.login_btn:hover {
+  background-color: #e5ad06;
+  transform: translateY(-2px);
+}
+
+/* أزرار جوجل وفيسبوك */
+.social_btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #e8f3ee; /* اللون الأخضر الفاتح الهادئ */
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2d3436;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.social_btn:hover {
+  background-color: #d1e5dc;
+}
+
+/* تنسيق الأيقونة داخل الزرار */
+.social_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+.main-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+}
+
+.login-form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  width: 100%;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1c1e21;
+}
+
+.login-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input-wrapper {
+  text-align: left;
+}
+
+.input-label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1c1e21;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.primary-login-btn {
+  background-color: #ffc107;
+  color: #1c1e21;
+  padding: 14px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.social-login-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border: none;
+  background-color: #e8f0fe;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #3c4043;
+}
+
+.social-icon { font-size: 20px; }
+.facebook-icon-color { color: #1877f2; }

@@ -1,0 +1,96 @@
+.details-container {
+  padding: 100px 15%;
+  min-height: 100vh;
+  background-color: #fafafa; /* خليت الخلفية أوف وايت بسيط عشان الصور تنطق */
+}
+
+/* زر العودة - ستايل الـ Gradient اللذيذ */
+.back-btn {
+  display: inline-flex; /* عشان يفضل حجمه على قد المحتوى */
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 40px;
+}
+
+.back-btn:hover {
+  transform: translateX(-8px); /* حركة الرجوع اللي طلبتيها */
+  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.4);
+  filter: brightness(1.1); /* بيفتح لونه خفيف */
+}
+
+.back-btn .arrow {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+/* عنوان المشروع */
+.details-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+/* تاج القسم (Category) */
+.category-tag {
+  display: inline-block;
+  color: #2575fc;
+  background: rgba(37, 117, 252, 0.1);
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+/* صورة المشروع - الـ Hero Image */
+.main-project-img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  margin-bottom: 50px;
+  /* أنيميشن دخول بسيط للصورة */
+  animation: slideUp 0.8s ease-out;
+}
+
+/* وصف المشروع */
+.project-description {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ريسبونسف للموبايل */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 60px 20px;
+  }
+  .details-title {
+    font-size: 2.2rem;
+  }
+}

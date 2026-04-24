@@ -1,0 +1,110 @@
+/* تأكدي إن الملف ده اسمه Profile.css */
+.profile-container {
+  display: flex;
+  min-height: 80vh;
+  background: #ffffff;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* عشان مفيش حاجة تطلع بره الحدود */
+}
+
+/* القائمة الجانبية - Sidebar */
+.profile-sidebar {
+  width: 280px;
+  background-color: #fcfcfc;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 25px;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.sidebar-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-menu li.active {
+  background-color: #fff4e5;
+  color: #d48806;
+  border-left: 4px solid #faad14;
+}
+
+.sidebar-menu li.danger { color: #ff4d4f; }
+.logout-item { margin-top: auto; border-top: 1px solid #eee; font-weight: bold; color: #333 !important; }
+
+/* الجزء الأساسي - Main Content */
+.profile-main {
+  flex: 1;
+  padding: 40px;
+  background: white;
+  text-align: left; /* لضمان إن الكلام ميبقاش عايم */
+}
+
+.home-back-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* ترتيب الفورم */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.save-btn {
+  background: #1a1a1a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: bold;
+}
