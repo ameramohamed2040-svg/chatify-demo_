@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/chatify-demo_npm%20run%20deploy/static/css/main.46ae9e1a.css",
-    "main.js": "/chatify-demo_npm%20run%20deploy/static/js/main.c04e4f30.js",
+    "main.js": "/chatify-demo_npm%20run%20deploy/static/js/main.5c3e81d6.js",
     "static/media/computers.png": "/chatify-demo_npm%20run%20deploy/static/media/computers.652c412403c035815bc3.png",
     "index.html": "/chatify-demo_npm%20run%20deploy/index.html",
     "main.46ae9e1a.css.map": "/chatify-demo_npm%20run%20deploy/static/css/main.46ae9e1a.css.map",
-    "main.c04e4f30.js.map": "/chatify-demo_npm%20run%20deploy/static/js/main.c04e4f30.js.map"
+    "main.5c3e81d6.js.map": "/chatify-demo_npm%20run%20deploy/static/js/main.5c3e81d6.js.map"
   },
   "entrypoints": [
     "static/css/main.46ae9e1a.css",
-    "static/js/main.c04e4f30.js"
+    "static/js/main.5c3e81d6.js"
   ]
 }
