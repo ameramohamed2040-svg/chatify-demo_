@@ -41,22 +41,31 @@
       "description": "تطوير تطبيقات موبايل ذكية تعمل على أنظمة Android و iOS بكفاءة عالية."
     }
   ],
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 },
-    { "id": "4", "title": "another title", "views": 400 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "products": [
-    { "id": "1", "title": "product1", "name": "dress" },
-    { "id": "2", "title": "product2", "name": "shirt" },
-    { "id": "3", "title": "product3", "name": "jacket" }
+  "staff": [
+    {
+      "id": "1",
+      "name": "Amira Mohamed",
+      "role": "Frontend Developer",
+      "bio": "Passionate about creating clean and responsive user interfaces.",
+      "image": "https://via.placeholder.com/150",
+      "skills": ["React", "JavaScript", "CSS", "HTML"]
+    },
+    {
+      "id": "2",
+      "name": "Jason Strother",
+      "role": "Lead Designer",
+      "bio": "Expert in visual communication and digital assets.",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg",
+      "skills": ["Skill 1", "Skill 2"]
+    },
+    {
+      "id": "3",
+      "name": "Sam Harry",
+      "role": "Technical Trainer",
+      "bio": "Specialized in team training and knowledge sharing.",
+      "image": "https://randomuser.me/api/portraits/men/33.jpg",
+      "skills": ["teaching", "training"]
+    }
   ],
   "users": [
     {
@@ -64,34 +73,17 @@
       "username": "Tamim Magdy",
       "email": "test@gmail.com",
       "password": "1234",
-      "image": "https://randomuser.me/api/portraits/men/1.jpg",
       "joinDate": "February 2026",
-      "role": "Premium Client"
+      "role": "Premium Client",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg"
     }
   ],
- "staff": [
-    {
-      "id": "1",
-      "name": "JASON STROTHER",
-      "role": "LOS OCHO",
-      "bio": "Me encanta...",
-      "skills": ["Skill 1", "Skill 2"],
-      "image": "https://randomuser.me/api/portraits/men/32.jpg"
-    },
-    {
-      "id": "2",
-      "name": "sam harry",
-      "role": "LOS OCHO",
-      "bio": "Me encanta...",
-      "skills": ["teaching", "trainig"],
-      "image": "https://randomuser.me/api/portraits/men/33.jpg"
-    },{
-      "id": "3",
-      "name": "JASON STROTHER",
-      "role": "dev potter",
-      "bio": "Me encanta...",
-      "skills": ["teachin", "designer"],
-      "image": "https://randomuser.me/api/portraits/men/30.jpg"
-    }
- ]
+  "products": [
+    { "id": "1", "title": "product1", "name": "dress" },
+    { "id": "2", "title": "product2", "name": "shirt" },
+    { "id": "3", "title": "product3", "name": "jacket" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

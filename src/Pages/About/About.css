@@ -1,111 +1,120 @@
 .about-page-new {
-  background-color: #f0ede9; /* نفس لون الخلفية في الصورة */
+  background-color: #efede8; /* نفس درجة اللون اللي في صورتك */
+  padding-bottom: 50px;
   min-height: 100vh;
-  padding: 50px 10%;
-  font-family: 'Georgia', serif; /* خط كلاسيكي */
 }
 
 .about-header {
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.about-header h1 {
-  font-size: 5rem;
-  font-weight: 900;
-  margin: 0;
-  color: #1a1a1a;
-}
-
-.about-header .subtitle {
   text-align: center;
+  padding: 80px 0 40px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.main-title {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
   letter-spacing: 5px;
-  font-size: 0.8rem;
-  color: #666;
-  padding: 10px 0;
-  border-top: 1px solid #ccc;
+}
+
+.subtitle {
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
 }
 
 .staff-label {
-  background: #1a1a1a;
-  color: white;
+  background: #000;
+  color: #fff;
   display: inline-block;
-  padding: 5px 15px;
+  padding: 5px 20px;
+  margin: 40px 0 40px 50px;
   font-weight: bold;
-  margin-bottom: 30px;
 }
 
 .staff-grid {
   display: flex;
-  gap: 30px;
-  justify-content: center;
   flex-wrap: wrap;
-
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
 }
 
 .staff-card {
-  background: #e6e6e6; /* لون الكارت الرمادي */
-  width: 300px;
-  border: 1px solid #d4d4d4;
+  background-color: #e2e2e2;
+  width: 350px; /* عرض الكارت */
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.image-container {
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.image-container img {
+.image-wrapper {
   width: 150px;
   height: 150px;
+  margin: 0 auto 30px;
   border-radius: 50%;
-  border: 5px solid white;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.staff-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  background-color: #a33; /* لون خلفية الصورة الداكن */
 }
 
-.card-info {
-  background: white;
-  margin: 0 10px 10px 10px;
-  padding: 20px;
-  min-height: 350px;
+.card-content {
+  text-align: left; /* الكلام يبدأ من الشمال عشان التفاصيل تبان */
 }
 
-.card-info h3 {
-  font-size: 1.1rem;
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-.member-role {
-  font-size: 0.7rem;
-  color: #888;
-  display: block;
-  margin-bottom: 15px;
+.member-name {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 
+.member-role {
+  font-size: 12px;
+  color: #777;
+  display: block;
+  margin-bottom: 15px;
+}
+
 .member-bio {
-  font-style: italic;
-  font-size: 0.9rem;
+  font-size: 14px;
+  line-height: 1.6;
   color: #444;
-  line-height: 1.5;
   margin-bottom: 20px;
+  height: 100px; /* بنثبت الطول عشان الكروت تطلع سوا */
+  overflow: hidden;
 }
 
-.skills-section h4 {
-  font-size: 0.8rem;
-  margin-bottom: 5px;
-}
-
-.skills-section ul {
+.skills-box ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.skills-section li {
-  font-size: 0.8rem;
-  color: #555;
-  margin-bottom: 5px;
+.skills-box li {
+  background: #fff;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+  .staff-card {
+    width: 100%;
+    max-width: 90%;
+  }
+  .main-title {
+    font-size: 50px;
+  }
 }

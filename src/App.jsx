@@ -1,5 +1,5 @@
-
-import { Routes, Route , useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import React, { useState } from 'react'; 
 import Navbar from './Components/Navbar/Navbar'; 
 import Home from './Pages/Home/Home';          
@@ -19,7 +19,7 @@ function App() {
     <>
   
 {location.pathname !== "/login" && location.pathname !== "/profile" && <Navbar isLoggedIn={isLoggedIn} />}
-      <Routes>
+      <Routes basename="/chatify-demo_">
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
       <Route path="/portfolio/:projectId" element={<ProjectDetails />} />
